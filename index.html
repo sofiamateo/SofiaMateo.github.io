@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="design.css">
+<title>School of Informtation Technology</title>
+<link rel="icon" href= "images/logo.png" type="image/x-icon"> 
+</head>
+<body>
+
+  
+<!------ Design Logo And Main Menu Section HTML Startss ------->
+<div class="container">
+  <!-------------------------LOGO SECTION--------------------------->
+  <img src="images/banner.png" class="logo">
+  <!-------------------------MENU SECTION-------------------------->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us</a>
+  </nav>
+</div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="images/announcement.png" style="width:100%; height: 500px">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="images/ASCOT.png" style="width:100%; height: 500px">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="images/aitechs.jpg" style="width:100%;  height: 500px">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="images/beerit.png" style="width:100%;  height: 500px">
+    <div class="text">Caption Three</div>
+  </div>
+  
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="images/beerit1.png" style="width:100%;  height: 500px">
+    <div class="text">Caption Three</div>
+  </div>
+  
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="images/dance.png" style="width:100%;  height: 500px">
+    <div class="text">Caption Three</div>
+  </div>
+  
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="images/group.png" style="width:100%;  height: 500px">
+    <div class="text">Caption Three</div>
+  </div>
+  
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="images/light.png" style="width:100%;  height: 500px">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  <!-------
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div> ---->
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+<!---------- About Us HTML Starts --------->
+<div class="main-section">
+
+    <div>
+      <h2 class="heading" style="text-align: center;"><strong> School of Information Technology </strong></h2>
+      <p style="text-align: justify;"> The School of Information Technology caters the highest percentage of the student population. 
+        Its separation from the Department of Engineering and Technology was approved by the BOT on May 13, 2008. 
+        As a separate department, it is manned by seven regular instructors, two temporary status and two contract of service instructors back then. 
+        Headed by their Dean, Dr. Mayreen V. Amazona, it continues to provide quality trainings needed by the students.</p>
+      
+    
+</div>
+
+
+<!---------- About Us HTML Ends --------->
+
+  <div class="containerannouncement">
+    </div>
+    <div class="text">
+      <p>
+        
+      </p>
+    </div>
+  </div>
+
+ 
+
+  <div>
+
+    <div class="comm">
+      <div class="imgcore">
+        <img src="images/logo.png">
+      </div>
+      <div class="text1">
+        <h1>Mission</h1> <br>
+        <p>ASCOT shall produce globally-competitive, ethically-upright and gender-responsive graduates in the fields of arts and sciences, forestry, agriculture, education, information technology, industrial technology, engineering, marine and environmental sciences by promoting quality instruction, research, extension and production towards sustainable development.</p>
+      </p> <br>
+        <h1>Vision</h1> <p>A Globally-recognized Scientific and Technological University by 2027 </p><br>
+        <h1>Core Values</h1> <p> ACCOUNTABILITY:
+          We value and give emphasis on responsibility to remain a solvent institution. We act with honesty, integrity and thoughtfulness. We demand for compiliance with statutes and regulations; adhere to professional norm and accountable for students' learning and to the general public. <br>
+          SERVICE ORIENTED:
+          We are engaged to service- whether it is academic, professional, or communal; it supports the other. We support and share. responsibility with the members of our organization. We train our clients in ordrr to be able to integrate and to be competitive on the labor market, must keep pace with changes in the global economy and in technology. <br>
+          CULTURE OF EXCELLENCE:
+          We encourage every personnel to excel in every performance of his/her duties leading to quality results. We also strive to provide our community with highest possible quality of client services, accessible facilities, products, programs, and technology. The categories of excellence such as well-being, curriculum being assessment and reporting, student performance measure and organizational culture are promoted. <br>
+          OUTCOMES-BASED
+          -we focus on the outcomes of every  service we deliver. In the process, the teacher, parents, students ang shareholders are involved in establishing the outcomes, students are to demonstrate with careful planning. <br>
+          TRANSPARENTCY
+          -We adhere to provide a complete visibility of all transactions into the successes and sometimes failures of our organization . It is an integral part of our culture as we collaborate and work together towards a common goal , We strive to train management committees , faculty, staff and interested parties on how to access data (online and offline) that can be used to demand accountability . <br>
+       </p>
+      </div>
+    </div>
+    
+    <!------ Campus, Events and Notice Board HTML Starts ------->
+<div class="main-section" style="background:#f0f3fa">
+  <div class="container">
+
+    <!----------------------------EVENT SECTION ----------------------->
+    <div class="event">
+      <h2 class="heading">Events</h2>
+      <div>
+        <ul>
+          <li>
+            <span class="event-date">18 <br> September </span> | 𝐉𝐔𝐀𝐍 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 2023
+            The air was filled with excitement, we kicked off the Juan Welcome event, September  18, 2023(Monday), a day that marked the beginning of an incredible academic year.
+            Every school within our campus had their designated booths, showcasing their unique spirit and talents. The School of Information Technology (SoIT) – truly stole the show for giving all students freedom to sing and showcase their talents.
+            The day began at gymnasium, where we all gathered for an opening ceremony. The energy was within as we cheered for each school and soaked in the remarks from our faculty, setting the tone for the festivities.
+            In this collection of photos, you can see alive with the vibrant energy of our students. The moment was captured in this breathtaking event, and we're thrilled to share it with all of you.
+            These captivating photos captured the vibrant energy of our students, and we're excited to share them with you.
+
+
+          </li>
+          <li>
+            <span class="event-date">29 <br> April </span> | 𝐓𝐇𝐄 𝐅𝐀𝐈𝐋𝐔𝐑𝐄𝐒 𝐇𝐀𝐒 𝐑𝐈𝐒𝐄𝐍
+            𝑆𝑜𝐼𝑇: 𝐶ℎ𝑒𝑒𝑟𝑑𝑎𝑛𝑐𝑒 𝐶ℎ𝑎𝑚𝑝𝑖𝑜𝑛🏆
+            We stand together in awe and excitement as we celebrate the indomitable spirit and unwavering determination of our Cheerdance champion this year 2023 - SoIT.
+            As School of Information Technology takes the dance floor, remember that it's not just about the choreography and cheers, 
+            it's allabout celebrating their spirit of never giving up. They have triumphed over adversities that could have shattered their dreams, 
+            at this moment, they stand as champions of unwavering determination, courage, and unity. They've embraced their past challenges, setbacks, 
+            and failures, using them as stepping stones to reach new heights of success. Their failures have risen, and filt us in this position. 
+            This journey has been marked by countless hours of practice, determination, and the ability to rise above every challenge. 
+            They've faced setbacks and disappointments that might have broken others, but these experiences have only made them stronger and more united as a team.
+            They all rise above these challenges, showing that working together and being determined are what make them really strong.
+            
+          </li> 
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div
+<!------ Events End ------->
+  </div>
+
+
+<!------
+  <h2 style="text-align: center;">ASCOT is committed to </h2>
+
+
+<div class="row">
+  <div class="column" style="background-color:#f0ae8f; text-align: center;">
+    <h2>Vision</h2>
+    <p>A Globally-recognized Scientific and Technological University by 2027.</p>
+  </div>
+  <div class="column" style="background-color:#f0ae8f; text-align: center;">
+    <h2>Mission</h2>
+    <p>ASCOT shall produce globally-competitive, ethically-upright and gender-responsive graduates in the fields of arts and sciences, forestry, agriculture, education, information technology, industrial technology, engineering, marine and environmental sciences by promoting quality instruction, research, extension and production towards sustainable development.</p>
+  </div>
+  <div class="column" style="background-color:#f0ae8f;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div> ---->
+
+
+
+
+
+</div>
+<div class="footer">
+  <p><footer>&copy; Copyright 2023 Sofia Xenia Mateo</footer>
+  </p>
+</div>
+
+</body>
+</html>
